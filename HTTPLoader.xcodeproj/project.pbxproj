@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC236B372AA0DC1F9921EA8A /* libPods-HTTPLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 746D3D82AC3AE92EC9F3E19A /* libPods-HTTPLoader.a */; };
 		F96936DE26D9081C00AB2F78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F96936DD26D9081C00AB2F78 /* AppDelegate.m */; };
 		F96936E126D9081C00AB2F78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96936E026D9081C00AB2F78 /* ViewController.m */; };
 		F96936E326D9081F00AB2F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96936E226D9081F00AB2F78 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		F96936E926D9081F00AB2F78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F96936E826D9081F00AB2F78 /* main.m */; };
 		F96936F426D9081F00AB2F78 /* HTTPLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F96936F326D9081F00AB2F78 /* HTTPLoaderTests.m */; };
 		F96936FF26D9081F00AB2F78 /* HTTPLoaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F96936FE26D9081F00AB2F78 /* HTTPLoaderUITests.m */; };
+		F969372426D90CBC00AB2F78 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F969372326D90CBC00AB2F78 /* libAFNetworking.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		746D3D82AC3AE92EC9F3E19A /* libPods-HTTPLoader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HTTPLoader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CECD895790A6E905003EBC4 /* Pods-HTTPLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTTPLoader.debug.xcconfig"; path = "Target Support Files/Pods-HTTPLoader/Pods-HTTPLoader.debug.xcconfig"; sourceTree = "<group>"; };
+		F1D29BF3EA1C7B919B946BF2 /* Pods-HTTPLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTTPLoader.release.xcconfig"; path = "Target Support Files/Pods-HTTPLoader/Pods-HTTPLoader.release.xcconfig"; sourceTree = "<group>"; };
 		F96936D926D9081C00AB2F78 /* HTTPLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTTPLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96936DC26D9081C00AB2F78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F96936DD26D9081C00AB2F78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		F96936FA26D9081F00AB2F78 /* HTTPLoaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTPLoaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96936FE26D9081F00AB2F78 /* HTTPLoaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPLoaderUITests.m; sourceTree = "<group>"; };
 		F969370026D9081F00AB2F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F969372326D90CBC00AB2F78 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F969372426D90CBC00AB2F78 /* libAFNetworking.a in Frameworks */,
+				BC236B372AA0DC1F9921EA8A /* libPods-HTTPLoader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99B561C52D38C360B71E2EDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F969372326D90CBC00AB2F78 /* libAFNetworking.a */,
+				746D3D82AC3AE92EC9F3E19A /* libPods-HTTPLoader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B3771A07CDEF03500ABA89C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CECD895790A6E905003EBC4 /* Pods-HTTPLoader.debug.xcconfig */,
+				F1D29BF3EA1C7B919B946BF2 /* Pods-HTTPLoader.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F96936D026D9081C00AB2F78 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +110,8 @@
 				F96936F226D9081F00AB2F78 /* HTTPLoaderTests */,
 				F96936FD26D9081F00AB2F78 /* HTTPLoaderUITests */,
 				F96936DA26D9081C00AB2F78 /* Products */,
+				9B3771A07CDEF03500ABA89C /* Pods */,
+				99B561C52D38C360B71E2EDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F969370326D9081F00AB2F78 /* Build configuration list for PBXNativeTarget "HTTPLoader" */;
 			buildPhases = (
+				960E364A206221FA50013C90 /* [CP] Check Pods Manifest.lock */,
 				F96936D526D9081C00AB2F78 /* Sources */,
 				F96936D626D9081C00AB2F78 /* Frameworks */,
 				F96936D726D9081C00AB2F78 /* Resources */,
@@ -253,6 +282,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		960E364A206221FA50013C90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HTTPLoader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F96936D526D9081C00AB2F78 /* Sources */ = {
@@ -421,6 +475,7 @@
 		};
 		F969370426D9081F00AB2F78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CECD895790A6E905003EBC4 /* Pods-HTTPLoader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -432,6 +487,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = Sun.HTTPLoader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -439,6 +495,7 @@
 		};
 		F969370526D9081F00AB2F78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D29BF3EA1C7B919B946BF2 /* Pods-HTTPLoader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
